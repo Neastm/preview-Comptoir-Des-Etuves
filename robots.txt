@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://comptoir-des-etuves.com/sitemap.xml

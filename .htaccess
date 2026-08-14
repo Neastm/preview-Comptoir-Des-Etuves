@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Use one canonical home URL.
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://comptoir-des-etuves.com/ [R=301,L]
+
+# Force HTTPS and remove www.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^comptoir-des-etuves\.com$ [NC]
+RewriteRule ^(.*)$ https://comptoir-des-etuves.com/$1 [R=301,L]

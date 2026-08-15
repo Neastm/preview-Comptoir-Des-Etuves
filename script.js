@@ -369,7 +369,7 @@ const REVIEWS_DATA = [
 
   const openModal = (card) => {
     const cardImage = card.querySelector("img");
-    const cardTitle = card.querySelector("h2");
+    const cardTitle = card.querySelector("h2, h4");
     const cardPrice = card.hasAttribute("data-no-price") ? null : card.querySelector("p");
 
     if (!cardTitle) return;
@@ -404,7 +404,7 @@ const REVIEWS_DATA = [
   cards.forEach((card) => {
     card.setAttribute("tabindex", "0");
     card.setAttribute("role", "button");
-    card.setAttribute("aria-label", copy.viewDetails(card.querySelector("h2")?.textContent.trim()));
+    card.setAttribute("aria-label", copy.viewDetails(card.querySelector("h2, h4")?.textContent.trim()));
     card.addEventListener("click", () => openModal(card));
     card.addEventListener("keydown", (event) => {
       if (event.key !== "Enter" && event.key !== " ") return;

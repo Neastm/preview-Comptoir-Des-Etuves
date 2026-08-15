@@ -611,7 +611,8 @@ p {
   gap: 0.45rem;
 }
 
-.product-card h2 {
+.product-card h2,
+.product-card h4 {
   margin: 0.42rem 0 0.18rem;
   color: var(--brand);
   font-size: clamp(0.95rem, 5vw, 1.25rem);
@@ -1059,7 +1060,7 @@ p {
 .home-hero {
   position: relative;
   isolation: isolate;
-  min-height: max(760px, calc(100svh - var(--topbar-h)));
+  min-height: max(720px, calc(100svh - var(--topbar-h)));
   display: block;
   overflow: hidden;
   padding: 0;
@@ -1068,37 +1069,54 @@ p {
 }
 
 .hero-photo,
-.hero-red-shape {
+.hero-red-shape,
+.hero-clip-defs {
   position: absolute;
+}
+
+.hero-photo,
+.hero-red-shape {
   inset: 0;
 }
 
 .hero-photo {
   z-index: -2;
-  background-image:
-    linear-gradient(180deg, transparent 50%, rgba(16, 16, 16, 0.3) 100%),
-    url("images/Hero.webp");
-  background-position: 58% center;
-  background-size: cover;
+  overflow: hidden;
+  background: #16100e;
+}
+
+.hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(16, 16, 16, 0.12), transparent 45%, rgba(16, 16, 16, 0.1));
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 72% 52%;
 }
 
 .hero-red-shape {
   z-index: -1;
   background: linear-gradient(145deg, #e22232 0%, var(--brand) 58%, var(--brand-dark) 100%);
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 61%,
-    91% 69%,
-    82% 60%,
-    72% 71%,
-    62% 64%,
-    50% 75%,
-    39% 66%,
-    27% 79%,
-    14% 70%,
-    0 82%
-  );
+}
+
+.hero-red-top {
+  clip-path: url(#hero-wave-top);
+}
+
+.hero-red-bottom {
+  clip-path: url(#hero-wave-bottom);
+}
+
+.hero-clip-defs {
+  width: 0;
+  height: 0;
+  pointer-events: none;
 }
 
 .home .home-hero-copy {
@@ -1106,34 +1124,27 @@ p {
   z-index: 2;
   width: auto;
   margin: 0;
-  padding: 10.6rem 1rem 16rem;
+  padding: 1rem 1rem 0;
 }
 
 .home .home-hero .kicker {
-  max-width: 33ch;
-  margin-bottom: 0.65rem;
-  font-size: 0.78rem;
+  max-width: 22ch;
+  margin-bottom: 0.7rem;
+  font-size: 0.72rem;
   line-height: 1.25;
   letter-spacing: 0.05em;
 }
 
-.home .home-hero h1 {
-  max-width: 11ch;
-  margin: 0 0 0.75rem;
-  font-size: clamp(3.15rem, 14.5vw, 5.7rem);
-  line-height: 0.88;
-}
-
 .home .hero-subtitle {
-  max-width: 39ch;
-  font-size: clamp(0.86rem, 3.7vw, 1rem);
-  line-height: 1.42;
+  max-width: 21ch;
+  font-size: clamp(0.82rem, 3.65vw, 0.96rem);
+  line-height: 1.34;
 }
 
 .home .home-hero .cta-row {
   align-items: center;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 .home .home-hero .btn,
@@ -1152,17 +1163,18 @@ p {
 .circular-logo {
   position: absolute;
   z-index: 3;
-  top: 0.7rem;
-  right: 0.65rem;
-  width: 154px;
+  top: 0.25rem;
+  right: 0.1rem;
+  width: 204px;
   aspect-ratio: 1;
   display: grid;
   place-items: center;
+  margin: 0;
   filter: drop-shadow(0 14px 24px rgba(89, 0, 8, 0.28));
 }
 
 .circular-logo img {
-  width: 66%;
+  width: 65%;
   aspect-ratio: 1;
   display: block;
   border: 5px solid #fff;
@@ -1183,13 +1195,25 @@ p {
 .circular-logo-text text {
   fill: #fff;
   font-family: "Anton", Impact, sans-serif;
-  font-size: 21px;
-  letter-spacing: 2.2px;
+  font-size: 13.4px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .circular-logo:hover .circular-logo-text {
   animation-duration: 5s;
+}
+
+.hero-price-sticker {
+  position: absolute;
+  z-index: 4;
+  top: 55%;
+  right: 0.4rem;
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  transform: translateY(-50%) rotate(7deg);
+  filter: drop-shadow(0 10px 16px rgba(16, 16, 16, 0.2));
 }
 
 .text-loop-band {
@@ -1368,7 +1392,7 @@ p {
   border-radius: 10px;
 }
 
-.home .menu-explorer .product-card h2 {
+.home .menu-explorer .product-card h4 {
   margin: 0.52rem 0.3rem 0.24rem;
   font-size: clamp(1rem, 4.8vw, 1.35rem);
   line-height: 1.02;
@@ -1439,42 +1463,40 @@ p {
     min-height: calc(100svh - var(--topbar-h));
   }
 
-  .home .hero-red-shape {
-    clip-path: polygon(0 0, 64% 0, 74% 15%, 65% 31%, 78% 48%, 64% 62%, 72% 79%, 57% 100%, 0 100%);
-  }
-
-  .home .hero-photo {
-    background-position: center;
+  .home .hero-photo img {
+    object-position: center 52%;
   }
 
   .home .home-hero-copy {
-    width: min(54vw, 620px);
-    min-height: calc(100svh - var(--topbar-h));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: max(1.5rem, calc((100vw - 1120px) / 2));
-    padding: 4.2rem 0;
-  }
-
-  .home .home-hero h1 {
-    font-size: clamp(4.3rem, 8.2vw, 7.3rem);
+    width: min(36vw, 440px);
+    min-height: auto;
+    display: block;
+    margin-left: calc(max(1.5rem, calc((100vw - 1120px) / 2)) + clamp(220px, 19vw, 280px));
+    padding: 3.2rem 0 0;
   }
 
   .home .home-hero .kicker {
-    font-size: 0.9rem;
+    max-width: 36ch;
+    font-size: 0.84rem;
   }
 
   .home .hero-subtitle {
     max-width: 46ch;
-    font-size: 1rem;
+    font-size: 0.96rem;
   }
 
   .circular-logo {
-    top: auto;
-    right: max(2rem, calc((100vw - 1180px) / 2));
-    bottom: 2rem;
-    width: clamp(180px, 17vw, 230px);
+    top: 1rem;
+    right: auto;
+    bottom: auto;
+    left: max(1.5rem, calc((100vw - 1120px) / 2));
+    width: clamp(210px, 18vw, 260px);
+  }
+
+  .hero-price-sticker {
+    right: max(1.5rem, calc((100vw - 1240px) / 2));
+    width: 132px;
+    height: 132px;
   }
 
   .menu-heading {
@@ -1487,7 +1509,7 @@ p {
     gap: 0.8rem;
   }
 
-  .home .menu-explorer .product-card h2 {
+  .home .menu-explorer .product-card h4 {
     font-size: 1.35rem;
   }
 }
@@ -1508,25 +1530,14 @@ p {
 
 @media (orientation: landscape) and (max-height: 620px) and (max-width: 900px) {
   .home .home-hero {
-    min-height: calc(100svh - var(--topbar-h));
-  }
-
-  .home .hero-red-shape {
-    clip-path: polygon(0 0, 65% 0, 74% 22%, 65% 42%, 76% 62%, 60% 100%, 0 100%);
+    min-height: 500px;
   }
 
   .home .home-hero-copy {
-    width: 60%;
-    min-height: calc(100svh - var(--topbar-h));
-    justify-content: center;
-    margin-left: 0;
-    padding: 0.75rem 0 0.9rem 1rem;
-  }
-
-  .home .home-hero h1 {
-    max-width: 12ch;
-    margin-bottom: 0.45rem;
-    font-size: clamp(2.7rem, 6vw, 3.3rem);
+    width: 54%;
+    min-height: auto;
+    margin-left: 1rem;
+    padding: 0.8rem 0 0;
   }
 
   .home .home-hero .kicker {
@@ -1552,9 +1563,17 @@ p {
   }
 
   .circular-logo {
-    top: auto;
-    right: 1.2rem;
-    bottom: 0.75rem;
-    width: 106px;
+    top: 0.25rem;
+    right: 0.6rem;
+    bottom: auto;
+    left: auto;
+    width: 148px;
+  }
+
+  .hero-price-sticker {
+    top: 55%;
+    right: 0.65rem;
+    width: 86px;
+    height: 86px;
   }
 }

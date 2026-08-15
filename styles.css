@@ -1097,7 +1097,7 @@ p {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: 72% 52%;
+  object-position: 66% 56%;
 }
 
 .hero-red-shape {
@@ -1127,18 +1127,56 @@ p {
   padding: 1rem 1rem 0;
 }
 
-.home .home-hero .kicker {
-  max-width: 22ch;
-  margin-bottom: 0.7rem;
-  font-size: 0.72rem;
-  line-height: 1.25;
-  letter-spacing: 0.05em;
+.hero-local-title {
+  max-width: 190px;
+  margin: 0;
+  font-family: "Anton", Impact, sans-serif;
+  font-size: clamp(2rem, 9.4vw, 2.55rem);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  text-wrap: balance;
+  filter: drop-shadow(0 5px 0 rgba(137, 8, 22, 0.34));
 }
 
-.home .hero-subtitle {
-  max-width: 21ch;
-  font-size: clamp(0.82rem, 3.65vw, 0.96rem);
-  line-height: 1.34;
+.hero-local-title span,
+.hero-local-title strong {
+  display: block;
+}
+
+.hero-local-title strong {
+  position: relative;
+  width: fit-content;
+  margin-top: 0.12em;
+  color: #fff5e8;
+  font-weight: 400;
+}
+
+.hero-local-title strong::after {
+  content: "";
+  position: absolute;
+  right: 0.05em;
+  bottom: -0.13em;
+  left: 0.02em;
+  height: 0.09em;
+  border-radius: 99px;
+  background: currentColor;
+  transform: rotate(-1.5deg);
+}
+
+.hero-alias {
+  width: fit-content;
+  margin-top: 0.72rem;
+  padding: 0.26rem 0.48rem;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  background: rgba(147, 7, 20, 0.28);
+  font-size: 0.57rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
 }
 
 .home .home-hero .cta-row {
@@ -1195,8 +1233,8 @@ p {
 .circular-logo-text text {
   fill: #fff;
   font-family: "Anton", Impact, sans-serif;
-  font-size: 13.4px;
-  letter-spacing: 1px;
+  font-size: 7.1px;
+  letter-spacing: 0.28px;
   text-transform: uppercase;
 }
 
@@ -1207,10 +1245,10 @@ p {
 .hero-price-sticker {
   position: absolute;
   z-index: 4;
-  top: 55%;
+  top: 68%;
   right: 0.4rem;
-  width: 96px;
-  height: 96px;
+  width: 104px;
+  height: auto;
   object-fit: contain;
   transform: translateY(-50%) rotate(7deg);
   filter: drop-shadow(0 10px 16px rgba(16, 16, 16, 0.2));
@@ -1464,25 +1502,26 @@ p {
   }
 
   .home .hero-photo img {
-    object-position: center 52%;
+    object-position: center 62%;
   }
 
   .home .home-hero-copy {
-    width: min(36vw, 440px);
+    width: min(44vw, 520px);
     min-height: auto;
     display: block;
     margin-left: calc(max(1.5rem, calc((100vw - 1120px) / 2)) + clamp(220px, 19vw, 280px));
     padding: 3.2rem 0 0;
   }
 
-  .home .home-hero .kicker {
-    max-width: 36ch;
-    font-size: 0.84rem;
+  .hero-local-title {
+    max-width: 480px;
+    font-size: clamp(3.15rem, 4.4vw, 4.35rem);
   }
 
-  .home .hero-subtitle {
-    max-width: 46ch;
-    font-size: 0.96rem;
+  .hero-alias {
+    margin-top: 1rem;
+    padding: 0.34rem 0.62rem;
+    font-size: 0.68rem;
   }
 
   .circular-logo {
@@ -1495,8 +1534,8 @@ p {
 
   .hero-price-sticker {
     right: max(1.5rem, calc((100vw - 1240px) / 2));
-    width: 132px;
-    height: 132px;
+    width: 142px;
+    height: auto;
   }
 
   .menu-heading {
@@ -1540,15 +1579,14 @@ p {
     padding: 0.8rem 0 0;
   }
 
-  .home .home-hero .kicker {
-    margin-bottom: 0.35rem;
-    font-size: 0.65rem;
+  .hero-local-title {
+    max-width: 330px;
+    font-size: 2.2rem;
   }
 
-  .home .hero-subtitle {
-    max-width: 44ch;
-    font-size: 0.7rem;
-    line-height: 1.28;
+  .hero-alias {
+    margin-top: 0.42rem;
+    font-size: 0.52rem;
   }
 
   .home .home-hero .cta-row {
@@ -1571,9 +1609,9 @@ p {
   }
 
   .hero-price-sticker {
-    top: 55%;
+    top: 68%;
     right: 0.65rem;
-    width: 86px;
-    height: 86px;
+    width: 96px;
+    height: auto;
   }
 }

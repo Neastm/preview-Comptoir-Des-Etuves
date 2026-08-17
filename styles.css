@@ -989,88 +989,56 @@ p {
   font-weight: 800;
 }
 
-.home-hero {
+.one-page-home .home-hero {
   position: relative;
   isolation: isolate;
   min-height: max(720px, calc(100svh - var(--topbar-h)));
-  display: block;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 0.4rem;
   overflow: hidden;
-  padding: 0;
+  padding: 1rem 0 3.7rem;
   color: #fff;
-  background: #16100e;
+  background:
+    radial-gradient(circle at 82% 58%, rgba(255, 225, 75, 0.13) 0 2px, transparent 3px),
+    radial-gradient(circle at 12% 72%, rgba(255, 255, 255, 0.08) 0 1px, transparent 2px),
+    linear-gradient(145deg, #e22232 0%, var(--brand) 58%, var(--brand-dark) 100%);
+  background-size: 31px 31px, 23px 23px, auto;
 }
 
-.hero-photo,
-.hero-red-shape,
-.hero-clip-defs {
-  position: absolute;
-}
-
-.hero-photo,
-.hero-red-shape {
-  inset: 0;
-}
-
-.hero-photo {
-  z-index: -2;
-  overflow: hidden;
-  background: #16100e;
-}
-
-.hero-photo::after {
+.one-page-home .home-hero::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(16, 16, 16, 0.12), transparent 45%, rgba(16, 16, 16, 0.1));
-}
-
-.hero-photo img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: 54% 56%;
-  transform: translateY(3.5%) scale(1.12);
-  transform-origin: 62% 62%;
-}
-
-.hero-red-shape {
   z-index: -1;
-  background: linear-gradient(145deg, #e22232 0%, var(--brand) 58%, var(--brand-dark) 100%);
-}
-
-.hero-red-top {
-  clip-path: url(#hero-wave-top);
-}
-
-.hero-red-bottom {
-  clip-path: url(#hero-wave-bottom);
-}
-
-.hero-clip-defs {
-  width: 0;
-  height: 0;
+  width: 82vw;
+  height: 36vw;
+  right: -34vw;
+  bottom: 20%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 28px rgba(255, 255, 255, 0.025), 0 0 0 64px rgba(255, 225, 75, 0.025);
+  transform: rotate(-18deg);
   pointer-events: none;
 }
 
-.home .home-hero-copy {
+.one-page-home .home-hero-copy {
   position: relative;
   z-index: 2;
-  width: auto;
+  width: min(48vw, 188px);
   margin: 0;
-  padding: 1rem 1rem 0;
+  padding: 0 0 0 1rem;
 }
 
 .hero-local-title {
-  max-width: 190px;
+  width: 100%;
   margin: 0;
   font-family: "Anton", Impact, sans-serif;
-  font-size: clamp(2rem, 9.4vw, 2.55rem);
+  font-size: clamp(2.15rem, 10.2vw, 2.58rem);
   font-weight: 400;
-  line-height: 0.92;
+  line-height: 0.86;
   letter-spacing: 0.015em;
   text-transform: uppercase;
-  text-wrap: balance;
   filter: drop-shadow(0 5px 0 rgba(137, 8, 22, 0.34));
 }
 
@@ -1079,12 +1047,24 @@ p {
   display: block;
 }
 
+.hero-title-restaurant {
+  white-space: nowrap;
+  font-size: 0.88em;
+}
+
+.hero-title-context {
+  margin-top: 0.08em;
+  font-size: 0.82em;
+}
+
 .hero-local-title strong {
   position: relative;
   width: fit-content;
-  margin-top: 0.12em;
+  margin-top: 0.08em;
   color: #fff5e8;
+  font-size: 1.28em;
   font-weight: 400;
+  letter-spacing: 0.005em;
 }
 
 .hero-local-title strong::after {
@@ -1101,7 +1081,7 @@ p {
 
 .hero-alias {
   width: fit-content;
-  margin-top: 0.72rem;
+  margin-top: 0.78rem;
   padding: 0.26rem 0.48rem;
   border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 999px;
@@ -1113,21 +1093,45 @@ p {
   text-transform: uppercase;
 }
 
-.home .home-hero .cta-row {
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 3.8rem;
+.hero-product-stage {
+  position: relative;
+  z-index: 2;
+  width: min(108vw, 460px);
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 0.25rem;
+  transform: translateY(-1.5rem);
 }
 
-.home .home-hero .btn,
-.home .home-hero .uber-eats-button {
+.hero-burger {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 22px 14px rgba(83, 0, 8, 0.34));
+  transform: rotate(-1.5deg);
+}
+
+.one-page-home .home-hero .hero-actions {
+  position: relative;
+  z-index: 5;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0;
+  padding-inline: 0.75rem;
+}
+
+.one-page-home .home-hero .btn,
+.one-page-home .home-hero .uber-eats-button {
   min-height: 44px;
   margin-left: 0;
   padding: 0.68rem 0.9rem;
   font-size: 0.9rem;
 }
 
-.home .home-hero .uber-eats-button {
+.one-page-home .home-hero .uber-eats-button {
   border-width: 2px;
   box-shadow: none;
 }
@@ -1179,13 +1183,13 @@ p {
 .hero-price-sticker {
   position: absolute;
   z-index: 4;
-  top: 68%;
-  right: 0.4rem;
-  width: 104px;
+  top: 4%;
+  right: 2.4rem;
+  width: clamp(94px, 27vw, 112px);
   height: auto;
   object-fit: contain;
-  transform: translateY(-50%) rotate(7deg);
-  filter: drop-shadow(0 10px 16px rgba(16, 16, 16, 0.2));
+  transform: translateY(-22%) rotate(7deg);
+  filter: drop-shadow(0 10px 16px rgba(76, 0, 7, 0.28));
 }
 
 .text-loop-band {
@@ -1239,7 +1243,7 @@ p {
 
 .home .menu-explorer {
   overflow: visible;
-  padding: 5rem 0 4.5rem;
+  padding: 3.35rem 0 4.5rem;
   scroll-margin-top: var(--topbar-h);
 }
 
@@ -1431,27 +1435,18 @@ p {
     padding-bottom: 1.8rem;
   }
 
-  .home .home-hero {
+  .one-page-home .home-hero {
     min-height: calc(100svh - var(--topbar-h));
   }
 
-  .home .hero-photo img {
-    object-position: center 62%;
-    transform: scale(1.08);
-    transform-origin: center 62%;
-  }
-
-  .home .home-hero-copy {
-    width: min(44vw, 520px);
-    min-height: auto;
-    display: block;
-    margin-left: calc(max(1.5rem, calc((100vw - 1120px) / 2)) + clamp(220px, 19vw, 280px));
-    padding: 3.2rem 0 0;
+  .one-page-home .home-hero-copy {
+    width: min(43vw, 390px);
+    margin-left: max(2rem, calc((100vw - 1120px) / 2));
+    padding: 1.8rem 0 0;
   }
 
   .hero-local-title {
-    max-width: 480px;
-    font-size: clamp(3.15rem, 4.4vw, 4.35rem);
+    font-size: clamp(3.2rem, 5.2vw, 4.7rem);
   }
 
   .hero-alias {
@@ -1461,17 +1456,19 @@ p {
   }
 
   .circular-logo {
-    top: 1rem;
-    right: auto;
-    bottom: auto;
-    left: calc(max(1.5rem, calc((100vw - 1120px) / 2)) + 0.35rem);
-    width: clamp(210px, 18vw, 260px);
+    top: 1.2rem;
+    right: max(1.5rem, calc((100vw - 1120px) / 2));
+    left: auto;
+    width: clamp(220px, 22vw, 300px);
+  }
+
+  .hero-product-stage {
+    width: clamp(440px, 42vw, 500px);
   }
 
   .hero-price-sticker {
-    right: max(1.5rem, calc((100vw - 1240px) / 2));
-    width: 142px;
-    height: auto;
+    right: 0.75rem;
+    width: clamp(128px, 14vw, 158px);
   }
 
   .menu-heading {
@@ -1491,7 +1488,7 @@ p {
 
 @media (min-width: 980px) {
   .home .menu-explorer {
-    padding-block: 6.5rem;
+    padding: 4.8rem 0 6.5rem;
   }
 
   .home .menu-explorer .product-grid {
@@ -1504,20 +1501,23 @@ p {
 }
 
 @media (orientation: landscape) and (max-height: 620px) and (max-width: 900px) {
-  .home .home-hero {
-    min-height: 500px;
+  .one-page-home .home-hero {
+    min-height: calc(100svh - var(--topbar-h));
+    display: block;
+    padding: 0;
   }
 
-  .home .home-hero-copy {
-    width: 54%;
-    min-height: auto;
-    margin-left: 1rem;
-    padding: 0.8rem 0 0;
+  .one-page-home .home-hero-copy {
+    position: absolute;
+    top: 0.75rem;
+    left: 0;
+    width: 245px;
+    margin: 0;
+    padding: 0 0 0 1rem;
   }
 
   .hero-local-title {
-    max-width: 330px;
-    font-size: 2.2rem;
+    font-size: 2.25rem;
   }
 
   .hero-alias {
@@ -1525,12 +1525,20 @@ p {
     font-size: 0.52rem;
   }
 
-  .home .home-hero .cta-row {
-    margin-top: 3.25rem;
+  .one-page-home .home-hero .hero-actions {
+    position: absolute;
+    right: auto;
+    bottom: 0.55rem;
+    left: 50%;
+    width: max-content;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+    transform: translateX(-50%);
   }
 
-  .home .home-hero .btn,
-  .home .home-hero .uber-eats-button {
+  .one-page-home .home-hero .btn,
+  .one-page-home .home-hero .uber-eats-button {
     min-height: 36px;
     padding: 0.45rem 0.68rem;
     font-size: 0.76rem;
@@ -1539,15 +1547,22 @@ p {
   .circular-logo {
     top: 0.25rem;
     right: 0.3rem;
-    bottom: auto;
     left: auto;
     width: 148px;
   }
 
+  .hero-product-stage {
+    position: absolute;
+    top: 1.15rem;
+    left: 50%;
+    width: 260px;
+    margin: 0;
+    transform: translateX(-50%);
+  }
+
   .hero-price-sticker {
-    top: 68%;
-    right: 0.65rem;
-    width: 96px;
-    height: auto;
+    top: 3%;
+    right: 0.8rem;
+    width: 76px;
   }
 }

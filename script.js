@@ -1,31 +1,29 @@
 const REVIEWS_INTERVAL_MS = 9000;
 
-const REVIEWS_DATA = [
-  {
-    author: "Clément",
-    rating: 5,
-    text: "Service rapide, portions généreuses et super accueil. Je recommande les wraps.",
-    date: "il y a 2 semaines"
-  },
-  {
-    author: "Julie",
-    rating: 5,
-    text: "Très bon snack en centre-ville. Les formules sont claires et le rapport qualité/prix est top.",
-    date: "il y a 1 mois"
-  },
-  {
-    author: "Andreas",
-    rating: 4,
-    text: "Burgers bien garnis et desserts gourmands. Pratique pour commander vite.",
-    date: "il y a 3 semaines"
-  },
-  {
-    author: "Xavier",
-    rating: 5,
-    text: "J'aime beaucoup l'ambiance et la rapidité de service. Bon plan du quartier.",
-    date: "il y a 1 semaine"
-  }
-];
+const REVIEWS_DATA_BY_LANG = {
+  fr: [
+    { author: "Clément", rating: 5, text: "Service rapide, portions généreuses et super accueil. Je recommande les wraps.", date: "il y a 2 semaines" },
+    { author: "Julie", rating: 5, text: "Très bon snack en centre-ville. Les formules sont claires et le rapport qualité/prix est top.", date: "il y a 1 mois" },
+    { author: "Andreas", rating: 4, text: "Burgers bien garnis et desserts gourmands. Pratique pour commander vite.", date: "il y a 3 semaines" },
+    { author: "Xavier", rating: 5, text: "J'aime beaucoup l'ambiance et la rapidité de service. Bon plan du quartier.", date: "il y a 1 semaine" }
+  ],
+  en: [
+    { author: "Clément", rating: 5, text: "Fast service, generous portions and a warm welcome. I recommend the wraps.", date: "2 weeks ago" },
+    { author: "Julie", rating: 5, text: "A great snack restaurant in the city centre. Clear meal deals and excellent value.", date: "1 month ago" },
+    { author: "Andreas", rating: 4, text: "Generously filled burgers and indulgent desserts. Convenient when you want to order quickly.", date: "3 weeks ago" },
+    { author: "Xavier", rating: 5, text: "I really like the atmosphere and the fast service. A great neighbourhood spot.", date: "1 week ago" }
+  ],
+  es: [
+    { author: "Clément", rating: 5, text: "Servicio rápido, porciones generosas y una gran acogida. Recomiendo los wraps.", date: "hace 2 semanas" },
+    { author: "Julie", rating: 5, text: "Muy buen snack en el centro. Los menús son claros y la relación calidad-precio es excelente.", date: "hace 1 mes" },
+    { author: "Andreas", rating: 4, text: "Hamburguesas generosas y postres deliciosos. Muy práctico para pedir rápidamente.", date: "hace 3 semanas" },
+    { author: "Xavier", rating: 5, text: "Me gustan mucho el ambiente y la rapidez del servicio. Un buen sitio del barrio.", date: "hace 1 semana" }
+  ]
+};
+
+const reviewsPageLanguage = (document.documentElement.lang || "fr").toLowerCase();
+const reviewsLanguage = reviewsPageLanguage.startsWith("es") ? "es" : reviewsPageLanguage.startsWith("en") ? "en" : "fr";
+const REVIEWS_DATA = REVIEWS_DATA_BY_LANG[reviewsLanguage];
 
 (function initMenu() {
   const menu = document.getElementById("siteMenu");

@@ -51,7 +51,8 @@
   if (preferredLanguage === "fr") return;
 
   const pageName = currentUrl.pathname.split("/").filter(Boolean).pop() || "";
-  const localizedPage = !pageName || pageName === "index.html" ? "" : pageName;
+  const isDirectoryUrl = currentUrl.pathname.endsWith("/");
+  const localizedPage = isDirectoryUrl || !pageName || pageName === "index.html" ? "" : pageName;
   const siteDirectoryUrl = new URL("./", currentUrl);
   const localizedPath = localizedPage || (currentUrl.protocol === "file:" ? "index.html" : "");
   const targetUrl = new URL(`${preferredLanguage}/${localizedPath}`, siteDirectoryUrl);

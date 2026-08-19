@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cheap Eats Montpellier | Le Comptoir des Etuves</title>
   <meta name="description" content="Formerly Chez Alex: snack in Montpellier city centre near Place de la Comedie. Burgers, tacos, hot sandwiches, wraps, takeaway and Uber Eats." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#d61d2c" />
   <link rel="canonical" href="https://comptoir-des-etuves.com/en/" />
   <link rel="alternate" hreflang="fr" href="https://comptoir-des-etuves.com/" />
@@ -18,12 +19,12 @@
   <meta property="og:title" content="Cheap Eats Montpellier | Le Comptoir des Etuves" />
   <meta property="og:description" content="Formerly Chez Alex: snack in Montpellier city centre near Place de la Comedie. Burgers, tacos, hot sandwiches, wraps, takeaway and Uber Eats." />
   <meta property="og:url" content="https://comptoir-des-etuves.com/en/" />
-  <meta property="og:image" content="https://comptoir-des-etuves.com/images/Hero-optimized.webp" />
+  <meta property="og:image" content="https://comptoir-des-etuves.com/images/Burger%20Montagnard.webp" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Cheap Eats Montpellier | Le Comptoir des Etuves" />
   <meta name="twitter:description" content="Formerly Chez Alex: snack in Montpellier city centre near Place de la Comedie. Burgers, tacos, hot sandwiches, wraps, takeaway and Uber Eats." />
-  <meta name="twitter:image" content="https://comptoir-des-etuves.com/images/Hero-optimized.webp" />
-  <link rel="preload" as="image" href="../images/Hero-optimized.webp" type="image/webp" fetchpriority="high" />
+  <meta name="twitter:image" content="https://comptoir-des-etuves.com/images/Burger%20Montagnard.webp" />
+  <link rel="preload" as="image" href="../images/burger-montagnard-detoure.png" type="image/png" fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -42,7 +43,7 @@
       "Chez Alex Montpellier"
     ],
     "url": "https://comptoir-des-etuves.com/en/",
-    "image": "https://comptoir-des-etuves.com/images/Hero-optimized.webp",
+    "image": "https://comptoir-des-etuves.com/images/Burger%20Montagnard.webp",
     "description": "Formerly Chez Alex, Le Comptoir des Etuves is a cheap eats and snack restaurant in Montpellier city centre, near Place de la Comedie.",
     "telephone": "+33783751334",
     "address": {
@@ -76,112 +77,279 @@
       "sandwiches",
       "tacos"
     ],
-    "menu": "https://comptoir-des-etuves.com/",
+    "menu": "https://comptoir-des-etuves.com/en/#menu",
     "inLanguage": "en"
   }
   </script>
 </head>
-<body class="home">
+<body class="home one-page-home">
   <header class="topbar">
-    <a class="brand" href="./" aria-label="Le Comptoir des Etuves home">
-      <img src="../images/logo.webp" alt="Le Comptoir des Etuves logo" />
-      <span>Le Comptoir des Etuves</span>
+    <a class="brand" href="#top" aria-label="Le Comptoir des Étuves home">
+      <img src="../images/logo.webp" alt="Le Comptoir des Étuves logo" />
+      <span>Le Comptoir des Étuves</span>
     </a>
-    <a class="uber-eats-button" href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw" target="_blank" rel="noopener"><span>Uber</span> <strong>EATS</strong></a>
-    <button class="menu-toggle" type="button" aria-controls="siteMenu" aria-expanded="false" aria-label="Open menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="topbar-actions">
+      <a class="topbar-link" href="#menu">Full menu</a>
+      <button class="menu-toggle" type="button" aria-controls="siteMenu" aria-expanded="false" aria-label="Open menu">
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-toggle-lines" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
   </header>
 
   <nav class="site-menu" id="siteMenu" aria-label="Main navigation" hidden>
     <div class="site-menu-panel">
-      <button class="menu-close" type="button" aria-label="Close menu">&times;</button>
-      <p class="menu-eyebrow">Menu</p>
-      <a href="wraps.html">Wraps</a>
-      <a href="sandwichs-chauds.html">Hot sandwiches</a>
-      <a href="tacos.html">Tacos</a>
-      <a href="burgers.html">Burgers</a>
-      <a href="salades.html">Salads</a>
-      <a href="americains.html">American sandwiches</a>
-      <a href="assiettes.html">Plates</a>
-      <a href="boissons.html">Drinks</a>
-      <a href="desserts.html">Desserts</a>
+      <div class="site-menu-header">
+        <a class="brand" href="#top" aria-label="Le Comptoir des Étuves home">
+          <img src="../images/logo.webp" alt="Le Comptoir des Étuves logo" />
+          <span>Le Comptoir des Étuves</span>
+        </a>
+        <button class="menu-close" type="button" aria-label="Close menu">&times;</button>
+      </div>
+      <p class="menu-eyebrow">Full menu</p>
+      <div class="site-menu-links">
+        <a href="#wraps">Wraps</a>
+        <a href="#sandwichs-chauds">Hot sandwiches</a>
+        <a href="#tacos">Tacos</a>
+        <a href="#burgers">Burgers</a>
+        <a href="#salades">Salads</a>
+        <a href="#americains">American sandwiches</a>
+        <a href="#assiettes">Plates</a>
+        <a href="#boissons">Drinks</a>
+        <a href="#desserts">Desserts</a>
+      </div>
+      <div class="site-menu-footer">
+        <a href="#infos">Practical information</a>
+        <a class="btn btn-uber-eats" href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw?msockid=33f06aeddd2b65fa2c007c70dc0e6430" target="_blank" rel="noopener">Uber Eats</a>
+      </div>
     </div>
   </nav>
 
-  <main>
-    <section class="home-hero wave-section wave-red">
+  <main id="top">
+    <section class="home-hero" aria-label="Le Comptoir des Étuves, snack restaurant in Montpellier">
       <div class="home-hero-copy">
-        <p class="kicker">Cheap eats in Montpellier - formerly Chez Alex</p>
-        <h1>Le Comptoir des Etuves</h1>
-        <p class="hero-subtitle">Chez Alex becomes Le Comptoir des Etuves. Come and enjoy burgers, tacos, hot sandwiches, wraps, American sandwiches and desserts near Place de la Comedie!</p>
-        <div class="cta-row">
-          <button class="btn btn-light menu-open-btn" type="button" aria-controls="siteMenu">Menu</button>
-          <a class="btn btn-ghost-light" href="https://maps.app.goo.gl/zL9TgHPNbq3qR7Xw9" target="_blank" rel="noopener">Get directions</a>
-        </div>
+        <p class="hero-local-title">
+          <span class="hero-title-restaurant">Restaurant</span>
+          <span class="hero-title-context">Snack near</span>
+          <strong>Comédie</strong>
+        </p>
+        <p class="hero-alias">Formerly Chez Alex</p>
       </div>
-      <figure class="hero-product">
-        <img src="../images/Hero-optimized.webp" alt="Generous burger from Le Comptoir des Etuves in Montpellier" width="1600" height="1067" fetchpriority="high" decoding="async" />
-      </figure>
+      <h1 class="circular-logo" aria-label="Le Comptoir des Étuves, snack restaurant in Montpellier">
+        <svg class="circular-logo-text" viewBox="0 0 200 200" aria-hidden="true">
+          <defs>
+            <path id="hero-logo-circle" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
+          </defs>
+          <text><textPath href="#hero-logo-circle" startOffset="0%">Wraps * Hot sandwiches * Tacos * Burgers * Salads * American sandwiches * Plates * Drinks * Desserts *</textPath></text>
+        </svg>
+        <img src="../images/logo.webp" alt="" />
+      </h1>
+      <div class="hero-product-stage">
+        <img class="hero-burger" src="../images/burger-montagnard-detoure.png" alt="Montagnard burger from Le Comptoir des Étuves" width="1100" height="1021" fetchpriority="high" decoding="async" />
+        <img class="hero-price-sticker" src="../images/sticker-prix-10-90-384.png" alt="From €10.90" width="384" height="355" decoding="async" />
+      </div>
+      <div class="cta-row hero-actions">
+        <button class="btn btn-light menu-open-btn" type="button" aria-controls="siteMenu">Menu</button>
+        <a class="btn btn-ghost-light" href="#boissons">Drinks</a>
+        <a class="uber-eats-button" href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw?msockid=33f06aeddd2b65fa2c007c70dc0e6430" target="_blank" rel="noopener"><span>Uber</span> <strong>EATS</strong></a>
+      </div>
     </section>
 
-    <section class="category-strip wave-section wave-light" id="menu" aria-label="Menu categories">
+    <section class="text-loop-band" aria-label="Wraps, burgers, tacos and sandwiches">
+      <div class="text-loop-ribbon">
+        <div class="text-loop-track" aria-hidden="true">
+          <span>Wraps ✦ Burgers ✦ Tacos ✦ Sandwiches ✦</span>
+          <span>Wraps ✦ Burgers ✦ Tacos ✦ Sandwiches ✦</span>
+          <span>Wraps ✦ Burgers ✦ Tacos ✦ Sandwiches ✦</span>
+          <span>Wraps ✦ Burgers ✦ Tacos ✦ Sandwiches ✦</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-explorer wave-section wave-light" id="menu" aria-labelledby="menu-title">
       <div class="section-inner">
-        <h2>Cheap eats and best-sellers</h2>
-        <div class="category-viewport">
-          <div class="category-scroll">
-            <a href="wraps.html"><img src="../images/Wrap%20Chicken%20Bacon.webp" alt="Wraps at Le Comptoir des Etuves" />Wraps</a>
-            <a href="sandwichs-chauds.html"><img src="../images/Sandwich%20Crosutillant.webp" alt="Hot sandwiches at Le Comptoir des Etuves" />Hot sandwiches</a>
-            <a href="tacos.html"><img src="../images/visuels-arrivent-bientot.webp" alt="French tacos at Le Comptoir des Etuves" />Tacos</a>
-            <a href="burgers.html"><img src="../images/Burger-Tenders-Bacon-hero.webp" alt="Burgers at Le Comptoir des Etuves" />Burgers</a>
-            <a href="americains.html"><img src="../images/visuels-arrivent-bientot.webp" alt="American sandwiches at Le Comptoir des Etuves" />American sandwiches</a>
-            <a href="salades.html"><img src="../images/visuels-arrivent-bientot.webp" alt="Salads at Le Comptoir des Etuves" />Salads</a>
-            <a href="assiettes.html"><img src="../images/visuels-arrivent-bientot.webp" alt="Plates at Le Comptoir des Etuves" />Plates</a>
-            <a href="boissons.html"><img src="../images/visuels-arrivent-bientot.webp" alt="Drinks at Le Comptoir des Etuves" />Drinks</a>
-            <a href="desserts.html"><img src="../images/visuels-arrivent-bientot.webp" alt="Desserts at Le Comptoir des Etuves" />Desserts</a>
-            <a href="wraps.html" aria-hidden="true" tabindex="-1"><img src="../images/Wrap%20Kebab.webp" alt="" />Wraps</a>
-            <a href="sandwichs-chauds.html" aria-hidden="true" tabindex="-1"><img src="../images/Sandwich%20Veggie.webp" alt="" />Hot sandwiches</a>
-            <a href="tacos.html" aria-hidden="true" tabindex="-1"><img src="../images/visuels-arrivent-bientot.webp" alt="" />Tacos</a>
-            <a href="burgers.html" aria-hidden="true" tabindex="-1"><img src="../images/Burger%20Montagnard.webp" alt="" />Burgers</a>
-            <a href="americains.html" aria-hidden="true" tabindex="-1"><img src="../images/visuels-arrivent-bientot.webp" alt="" />American sandwiches</a>
-            <a href="salades.html" aria-hidden="true" tabindex="-1"><img src="../images/visuels-arrivent-bientot.webp" alt="" />Salads</a>
-            <a href="assiettes.html" aria-hidden="true" tabindex="-1"><img src="../images/visuels-arrivent-bientot.webp" alt="" />Plates</a>
-            <a href="boissons.html" aria-hidden="true" tabindex="-1"><img src="../images/visuels-arrivent-bientot.webp" alt="" />Drinks</a>
-            <a href="desserts.html" aria-hidden="true" tabindex="-1"><img src="../images/visuels-arrivent-bientot.webp" alt="" />Desserts</a>
+        <div class="menu-heading">
+          <div>
+            <h2 id="menu-title">The snack menu</h2>
           </div>
         </div>
+
+        <div class="menu-category-nav" role="tablist" aria-label="Menu categories">
+          <button type="button" role="tab" aria-selected="true" aria-controls="wraps" class="is-active" data-menu-filter="wraps">Wraps</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="sandwichs-chauds" data-menu-filter="sandwichs-chauds">Sandwiches</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="tacos" data-menu-filter="tacos">Tacos</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="burgers" data-menu-filter="burgers">Burgers</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="salades" data-menu-filter="salades">Salads</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="americains" data-menu-filter="americains">American</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="assiettes" data-menu-filter="assiettes">Plates</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="boissons" data-menu-filter="boissons">Drinks</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="desserts" data-menu-filter="desserts">Desserts</button>
+        </div>
+
+        <div class="menu-catalogue">
+          <section class="menu-category" id="wraps" data-menu-category="wraps" role="tabpanel">
+            <div class="menu-category-heading"><h3>Wraps</h3><span>6 products</span></div>
+            <div class="product-grid">
+              <article class="product-card" data-menu-price="Fries + drink menu: 11,90 EUR / + dessert: 13,90 EUR" data-detail="Wheat wrap, chicken tenders, melted cheddar, fresh vegetables, caramelized onions." data-extras="Bacon +1 EUR, cheese +1 EUR (cheddar, goat cheese, raclette, mozzarella), steak +2 EUR, egg +1 EUR. Sides: fries 3 EUR, fries with melted cheddar 5 EUR, tenders bucket 6 pieces 6 EUR or 9 pieces 9 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Wrap tenders" /><h4>Wrap tenders</h4><p>7,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 11,90 EUR / + dessert: 13,90 EUR" data-detail="Wheat wrap, chicken breast, melted goat cheese, fresh vegetables, caramelized onions." data-extras="Bacon +1 EUR, cheese +1 EUR (cheddar, goat cheese, raclette, mozzarella), steak +2 EUR, egg +1 EUR. Sides: fries 3 EUR, fries with melted cheddar 5 EUR, tenders bucket 6 pieces 6 EUR or 9 pieces 9 EUR."><img loading="lazy" decoding="async" src="../images/Wrap%20Che%CC%82vre%20chaud.webp" alt="Warm goat cheese wrap" /><h4>Warm goat cheese wrap</h4><p>7,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 11,90 EUR / + dessert: 13,90 EUR" data-detail="Wheat wrap, vegetable patty, melted cheddar, fresh vegetables, caramelized onions." data-extras="Bacon +1 EUR, cheese +1 EUR (cheddar, goat cheese, raclette, mozzarella), steak +2 EUR, egg +1 EUR. Sides: fries 3 EUR, fries with melted cheddar 5 EUR, tenders bucket 6 pieces 6 EUR or 9 pieces 9 EUR."><img loading="lazy" decoding="async" src="../images/Wrap%20Veggie.webp" alt="Veggie wrap" /><h4>Veggie wrap</h4><p>7,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 11,90 EUR / + dessert: 13,90 EUR" data-detail="Wheat wrap, chicken tenders, beef bacon, fresh vegetables, caramelized onions." data-extras="Bacon +1 EUR, cheese +1 EUR (cheddar, goat cheese, raclette, mozzarella), steak +2 EUR, egg +1 EUR. Sides: fries 3 EUR, fries with melted cheddar 5 EUR, tenders bucket 6 pieces 6 EUR or 9 pieces 9 EUR."><img loading="lazy" decoding="async" src="../images/Wrap%20Chicken%20Bacon.webp" alt="Wrap chicken bacon" /><h4>Wrap chicken bacon</h4><p>7,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 11,90 EUR / + dessert: 13,90 EUR" data-detail="Wheat wrap, slices of marinated chicken kebab, fresh vegetables, caramelized onions." data-extras="Bacon +1 EUR, cheese +1 EUR (cheddar, goat cheese, raclette, mozzarella), steak +2 EUR, egg +1 EUR. Sides: fries 3 EUR, fries with melted cheddar 5 EUR, tenders bucket 6 pieces 6 EUR or 9 pieces 9 EUR."><img loading="lazy" decoding="async" src="../images/Wrap%20Kebab.webp" alt="Wrap kebab" /><h4>Wrap kebab</h4><p>7,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 13,90 EUR / + dessert: 15,90 EUR" data-detail="Wheat wrap, 120g butcher-style steak, potato patty, fresh vegetables, caramelized onions." data-extras="Bacon +1 EUR, cheese +1 EUR (cheddar, goat cheese, raclette, mozzarella), steak +2 EUR, egg +1 EUR. Sides: fries 3 EUR, fries with melted cheddar 5 EUR, tenders bucket 6 pieces 6 EUR or 9 pieces 9 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Wrap Sulivan" /><h4>Wrap Sulivan</h4><p>9,90 EUR</p></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="sandwichs-chauds" data-menu-category="sandwichs-chauds" role="tabpanel">
+            <div class="menu-category-heading"><h3>Hot sandwiches</h3><span>6 products</span></div>
+            <div class="product-grid">
+              <article class="product-card" data-menu-price="Fries + drink menu: 13,90 EUR / + dessert: 15,90 EUR" data-detail="Half bakery baguette, 120g butcher-style steak, cream cheese, melted emmental, fresh vegetables, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Traditional" /><h4>Traditional</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 13,90 EUR / + dessert: 15,90 EUR" data-detail="Half bakery baguette, chicken tenders, cheddar, fresh vegetables, caramelized onions."><img loading="lazy" decoding="async" src="../images/Sandwich%20Crosutillant.webp" alt="Crispy chicken" /><h4>Crispy chicken</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 13,90 EUR / + dessert: 15,90 EUR" data-detail="Half bakery baguette, vegetable patty, cheddar, fresh vegetables, caramelized onions."><img loading="lazy" decoding="async" src="../images/Sandwich%20Veggie.webp" alt="Vegetarian" /><h4>Vegetarian</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 13,90 EUR / + dessert: 15,90 EUR" data-detail="Half bakery baguette, 120g butcher-style steak, beef bacon, melted raclette, fresh vegetables, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Montagnard" /><h4>Montagnard</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 13,90 EUR / + dessert: 15,90 EUR" data-detail="Half bakery baguette, 120g butcher-style steak, beef bacon, blue cheese, fresh vegetables, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Signature au bleu" /><h4>Signature au bleu</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 14,90 EUR / + dessert: 16,90 EUR" data-detail="Half bakery baguette, 120g butcher-style steak, melted emmental, beef bacon, fried egg, fresh vegetables, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Le Chef" /><h4>Le Chef</h4><p>10,90 EUR</p></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="tacos" data-menu-category="tacos" role="tabpanel">
+            <div class="menu-category-heading"><h3>Tacos</h3><span>4 products</span></div>
+            <div class="product-grid">
+              <article class="product-card" data-detail="French taco with 1 meat, fries inside, cheese sauce and sauces to choose."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="1 meat" /><h4>1 meat</h4><p>9,50 EUR</p></article>
+              <article class="product-card" data-detail="French taco with 2 meats, fries inside, cheese sauce and sauces to choose."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="2 meats" /><h4>2 meats</h4><p>10,50 EUR</p></article>
+              <article class="product-card" data-detail="French taco with 3 meats, fries inside, cheese sauce and sauces to choose."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="3 meats" /><h4>3 meats</h4><p>11,50 EUR</p></article>
+              <article class="product-card" data-no-price data-no-menu-price data-detail="Meat to choose: steak / tenders / kebab / chicken breast&#10;&#10;Cheese to choose: cheddar / raclette / mozzarella / blue cheese / goat cheese / emmental&#10;&#10;Caramelized onions&#10;&#10;Fries"><img loading="lazy" decoding="async" src="../images/tacos-ingredients.webp" alt="Taco ingredients" /><h4>Taco ingredients</h4><p>Tap here!</p></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="burgers" data-menu-category="burgers" role="tabpanel">
+            <div class="menu-category-heading"><h3>Burgers</h3><span>8 products</span></div>
+            <div class="product-grid">
+              <article class="product-card" data-menu-price="Fries + drink menu: 13,90 EUR" data-detail="Brioche bun, 120g butcher-style steak, cheddar, lettuce, tomatoes, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Cheese burger" /><h4>Cheese burger</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 13,90 EUR" data-detail="Brioche bun, chicken tenders, cheddar, lettuce, tomatoes, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Chicken" /><h4>Chicken</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 13,90 EUR" data-detail="Brioche bun, vegetable patty, cheddar, lettuce, tomatoes, caramelized onions."><img loading="lazy" decoding="async" src="../images/Burger%20Veggie.webp" alt="Vegetarian" /><h4>Vegetarian</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 13,90 EUR" data-detail="Brioche bun, 120g butcher-style steak, melted goat cheese, lettuce, tomatoes, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Goat cheese" /><h4>Goat cheese</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 14,90 EUR" data-detail="Brioche bun, 120g butcher-style steak or chicken tenders, cheddar, beef bacon, lettuce, tomatoes, caramelized onions."><img loading="lazy" decoding="async" src="../images/Burger-Tenders-Bacon-hero.webp" alt="Bacon" /><h4>Bacon</h4><p>10,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 14,90 EUR" data-detail="Brioche bun, 120g butcher-style steak, raclette, beef bacon, lettuce, tomatoes, caramelized onions."><img loading="lazy" decoding="async" src="../images/Burger%20Montagnard.webp" alt="Montagnard" /><h4>Montagnard</h4><p>10,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 14,90 EUR" data-detail="Brioche bun, 120g butcher-style steak, potato patty, emmental, truffle sauce, lettuce, tomatoes, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Truffle" /><h4>Truffle</h4><p>10,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Fries + drink menu: 15,90 EUR" data-detail="Brioche bun, two 120g butcher-style steaks, cheddar, lettuce, tomatoes, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Big burger" /><h4>Big burger</h4><p>11,90 EUR</p></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="salades" data-menu-category="salades" role="tabpanel">
+            <div class="menu-category-heading"><h3>Salads</h3><span>4 products</span></div>
+            <div class="product-grid">
+              <article class="product-card" data-menu-price="Drink + dessert menu: 13,90 EUR" data-detail="Tenders de poulet, parmesan shavings, croutons, black olives, fried onions, Caesar sauce, lettuce, tomatoes."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Caesar salad" /><h4>Caesar salad</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Drink + dessert menu: 13,90 EUR" data-detail="Smoked salmon, mozzarella, black olives, cream cheese toasts, croutons, peppers, lettuce, tomatoes."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Salmon salad" /><h4>Salmon salad</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Drink + dessert menu: 13,90 EUR" data-detail="goat cheese toast, beef bacon, black olives, fried onions, croutons, peppers, lettuce, tomatoes."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Warm goat cheese salad" /><h4>Warm goat cheese salad</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Drink + dessert menu: 13,90 EUR" data-detail="Cured ham, croutons, mozzarella, pesto, black olives, peppers, fried onions, lettuce, tomatoes."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Italian salad" /><h4>Italian salad</h4><p>9,90 EUR</p></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="americains" data-menu-category="americains" role="tabpanel">
+            <div class="menu-category-heading"><h3>American sandwiches</h3><span>4 products</span></div>
+            <div class="product-grid">
+              <article class="product-card" data-menu-price="Drink menu: 11,00 EUR / + dessert: 13,50 EUR" data-detail="Half bakery baguette, fries, 120g butcher-style steak, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="American steak sandwich" /><h4>American steak sandwich</h4><p>9,50 EUR</p></article>
+              <article class="product-card" data-menu-price="Drink menu: 11,00 EUR / + dessert: 13,50 EUR" data-detail="Half bakery baguette, fries, chicken breast, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="American chicken sandwich" /><h4>American chicken sandwich</h4><p>9,50 EUR</p></article>
+              <article class="product-card" data-menu-price="Drink menu: 11,00 EUR / + dessert: 13,50 EUR" data-detail="Half bakery baguette, fries, chicken kebab, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="American kebab sandwich" /><h4>American kebab sandwich</h4><p>9,50 EUR</p></article>
+              <article class="product-card" data-menu-price="Drink menu: 11,00 EUR / + dessert: 13,50 EUR" data-detail="Half bakery baguette, fries, chicken tenders, caramelized onions."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="American tenders sandwich" /><h4>American tenders sandwich</h4><p>9,50 EUR</p></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="assiettes" data-menu-category="assiettes" role="tabpanel">
+            <div class="menu-category-heading"><h3>Plates</h3><span>3 products</span></div>
+            <div class="product-grid">
+              <article class="product-card" data-menu-price="Drink + dessert menu: 13,90 EUR" data-detail="Steak hache facon bouchere, fried egg, onions, mixed salad, fries or vegetables."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Steak and egg plate" /><h4>Steak and egg plate</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Drink + dessert menu: 13,90 EUR" data-detail="Tenders de poulet panes aux corn flakes, onions, fries, lettuce."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Chicken tenders" /><h4>Chicken tenders</h4><p>9,90 EUR</p></article>
+              <article class="product-card" data-menu-price="Drink + dessert menu: 13,90 EUR" data-detail="Kebab de poulet emince, caramelized onions, mixed salad, fries or vegetables."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Kebab" /><h4>Kebab</h4><p>9,90 EUR</p></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="boissons" data-menu-category="boissons" role="tabpanel">
+            <div class="menu-category-heading"><h3>Drinks</h3><span>23 products</span></div>
+            <div class="product-grid">
+              <article class="product-card" data-detail="Cold drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Water" /><h4>Water</h4><p>1,50 EUR</p></article>
+              <article class="product-card" data-detail="33cl canned soda."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="33cl canned soda" /><h4>33cl canned soda</h4><p>2,00 EUR</p></article>
+              <article class="product-card" data-detail="50cl bottled soda."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="50cl bottled soda" /><h4>50cl bottled soda</h4><p>2,50 EUR</p></article>
+              <article class="product-card" data-detail="Fresh lemon drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Lemonade" /><h4>Lemonade</h4><p>2,50 EUR</p></article>
+              <article class="product-card" data-detail="Iced peach tea."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Iced peach tea" /><h4>Iced peach tea</h4><p>2,50 EUR</p></article>
+              <article class="product-card" data-detail="Freshly squeezed orange juice."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Fresh orange juice" /><h4>Fresh orange juice</h4><p>4,00 EUR</p></article>
+              <article class="product-card" data-detail="Fresh smoothie."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Smoothies" /><h4>Smoothies</h4><p>4,90 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Coffee" /><h4>Coffee</h4><p>1,20 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Long coffee" /><h4>Long coffee</h4><p>1,50 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Espresso macchiato" /><h4>Espresso macchiato</h4><p>1,50 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Double espresso" /><h4>Double espresso</h4><p>2,00 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Cafe latte" /><h4>Cafe latte</h4><p>2,00 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Hot chocolate" /><h4>Hot chocolate</h4><p>2,50 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Cappuccino" /><h4>Cappuccino</h4><p>3,00 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Viennese coffee" /><h4>Viennese coffee</h4><p>3,00 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Viennese hot chocolate" /><h4>Viennese hot chocolate</h4><p>3,00 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Tea" /><h4>Tea</h4><p>2,00 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Decaf" /><h4>Decaf</h4><p>1,20 EUR</p></article>
+              <article class="product-card" data-detail="Hot drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Long decaf" /><h4>Long decaf</h4><p>1,50 EUR</p></article>
+              <article class="product-card" data-detail="Alcoholic drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Heineken" /><h4>Heineken</h4><p>3,00 EUR</p></article>
+              <article class="product-card" data-detail="Alcoholic drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Desperados" /><h4>Desperados</h4><p>4,00 EUR</p></article>
+              <article class="product-card" data-detail="Alcoholic drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Glass of wine" /><h4>Glass of wine</h4><p>2,50 EUR</p></article>
+              <article class="product-card" data-detail="Alcoholic drink."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Wine carafe" /><h4>Wine carafe</h4><p>7,50 EUR</p></article>
+            </div>
+          </section>
+
+          <section class="menu-category" id="desserts" data-menu-category="desserts" role="tabpanel">
+            <div class="menu-category-heading"><h3>Desserts</h3><span>21 products</span></div>
+            <div class="product-grid">
+              <article class="product-card" data-detail="Sweet crepe." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Sugar crepe" /><h4>Sugar crepe</h4><p>2,50 EUR</p></article>
+              <article class="product-card" data-detail="Crepe sucre citron." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Sugar and lemon crepe" /><h4>Sugar and lemon crepe</h4><p>3,00 EUR</p></article>
+              <article class="product-card" data-detail="Crepe confiture." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Jam crepe" /><h4>Jam crepe</h4><p>3,00 EUR</p></article>
+              <article class="product-card" data-detail="Crepe Nutella." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Nutella crepe" /><h4>Nutella crepe</h4><p>3,50 EUR</p></article>
+              <article class="product-card" data-detail="Crepe creme de marron." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Chestnut cream crepe" /><h4>Chestnut cream crepe</h4><p>3,50 EUR</p></article>
+              <article class="product-card" data-detail="Crepe caramel beurre sale." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Salted butter caramel crepe" /><h4>Salted butter caramel crepe</h4><p>3,00 EUR</p></article>
+              <article class="product-card" data-detail="Sweet waffle." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Sugar waffle" /><h4>Sugar waffle</h4><p>3,00 EUR</p></article>
+              <article class="product-card" data-detail="Gaufre sucre citron." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Sugar and lemon waffle" /><h4>Sugar and lemon waffle</h4><p>3,50 EUR</p></article>
+              <article class="product-card" data-detail="Gaufre confiture." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Jam waffle" /><h4>Jam waffle</h4><p>3,50 EUR</p></article>
+              <article class="product-card" data-detail="Gaufre Nutella." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Nutella waffle" /><h4>Nutella waffle</h4><p>4,00 EUR</p></article>
+              <article class="product-card" data-detail="Gaufre creme de marron." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Chestnut cream waffle" /><h4>Chestnut cream waffle</h4><p>4,00 EUR</p></article>
+              <article class="product-card" data-detail="Gaufre caramel beurre sale." data-extras="Whipped cream extra +0,50 EUR."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Salted butter caramel waffle" /><h4>Salted butter caramel waffle</h4><p>4,00 EUR</p></article>
+              <article class="product-card" data-detail="Generous dessert."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Chocolate cake" /><h4>Chocolate cake</h4><p>2,50 EUR</p></article>
+              <article class="product-card" data-detail="Generous dessert."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Lemon cake" /><h4>Lemon cake</h4><p>2,50 EUR</p></article>
+              <article class="product-card" data-detail="Generous dessert."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Donuts" /><h4>Donuts</h4><p>2,50 EUR</p></article>
+              <article class="product-card" data-detail="Generous dessert."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Apple tart" /><h4>Apple tart</h4><p>2,50 EUR</p></article>
+              <article class="product-card" data-detail="Generous dessert."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Flan" /><h4>Flan</h4><p>2,50 EUR</p></article>
+              <article class="product-card" data-detail="Generous dessert."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Cookie" /><h4>Cookie</h4><p>2,70 EUR</p></article>
+              <article class="product-card" data-detail="Generous dessert."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Tiramisu" /><h4>Tiramisu</h4><p>3,50 EUR</p></article>
+              <article class="product-card" data-detail="Generous dessert."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Muffin" /><h4>Muffin</h4><p>3,50 EUR</p></article>
+              <article class="product-card" data-detail="Tub of artisanal ice cream."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Artisanal ice cream" /><h4>Artisanal ice cream</h4><p>4,50 EUR</p></article>
+            </div>
+          </section>
+        </div>
       </div>
     </section>
 
-    <section class="feature-section wave-section wave-dark" id="delivery">
+    <section class="feature-section wave-section wave-dark">
       <div class="section-inner feature-grid">
         <div>
-          <p class="kicker">Eat in, takeaway, delivery</p>
-          <h2>Order Le Comptoir on Uber Eats</h2>
-          <p>Craving a burger, a wrap or a hot sandwich without moving? Order from Le Comptoir des Etuves on Uber Eats.</p>
+          <p class="kicker">Eat in, takeaway or delivery</p>
+          <h2>Get Le Comptoir delivered with Uber Eats</h2>
+          <p>Craving a burger, wrap or hot sandwich? Order Le Comptoir des Étuves on Uber Eats.</p>
           <div class="cta-row">
             <a class="btn btn-light" href="tel:+33783751334">Call</a>
             <a class="btn btn-ghost-light" href="https://maps.app.goo.gl/zL9TgHPNbq3qR7Xw9" target="_blank" rel="noopener">Directions</a>
-            <a class="btn btn-uber-eats" href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw" target="_blank" rel="noopener">Order on Uber Eats</a>
+            <a class="btn btn-uber-eats" href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw?msockid=33f06aeddd2b65fa2c007c70dc0e6430" target="_blank" rel="noopener">Order on Uber Eats</a>
           </div>
         </div>
         <div class="stacked-images">
-          <img src="../images/uber-eats-sac-comptoir.webp" alt="Uber Eats delivery bag at Le Comptoir des Etuves" />
-          <img src="../images/Uber-eats-promo.webp" alt="Drinks and takeaway products from Le Comptoir des Etuves" />
+          <img src="../images/uber-eats-sac-comptoir.webp" alt="Uber Eats delivery bag from Le Comptoir des Étuves" loading="lazy" decoding="async" />
+          <img src="../images/Uber-eats-promo.webp" alt="Drinks from Le Comptoir des Étuves" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
 
     <section class="info-section wave-section wave-paper" id="infos">
       <div class="section-inner">
-        <h2>Visit us on rue des Etuves</h2>
+        <h2>Visit us on rue des Étuves</h2>
         <div class="info-grid">
           <article>
             <h3>Address</h3>
-            <iframe class="info-map" title="Map to Le Comptoir des Etuves in Montpellier" src="https://maps.google.com/maps?hl=en&q=13%20rue%20des%20%C3%89tuves%2C%2034000%20Montpellier&t=&z=15&ie=UTF8&iwloc=B&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>13 rue des Etuves, 34000 Montpellier</p>
+            <iframe class="info-map" title="Map of Le Comptoir des Étuves in Montpellier" src="https://maps.google.com/maps?hl=en&q=13%20rue%20des%20%C3%89tuves%2C%2034000%20Montpellier&t=&z=15&ie=UTF8&iwloc=B&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>13 rue des Étuves, 34000 Montpellier</p>
             <a href="https://maps.app.goo.gl/zL9TgHPNbq3qR7Xw9" target="_blank" rel="noopener">Open directions</a>
           </article>
           <article>
@@ -195,18 +363,27 @@
         </div>
       </div>
     </section>
+
+    <section class="reviews-section wave-section wave-red">
+      <div class="section-inner">
+        <h2>Why regulars keep coming back</h2>
+        <div class="review-carousel" id="reviewCarousel" aria-live="polite">
+          <div class="review-track" id="reviewCarouselTrack"></div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <nav class="mobile-actions" aria-label="Quick mobile actions">
     <button class="menu-open-btn" type="button" aria-controls="siteMenu">Menu</button>
     <a href="tel:+33783751334">Call</a>
     <a href="https://maps.app.goo.gl/zL9TgHPNbq3qR7Xw9" target="_blank" rel="noopener">Directions</a>
-    <a href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw" target="_blank" rel="noopener">Uber EATS</a>
+    <a href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw?msockid=33f06aeddd2b65fa2c007c70dc0e6430" target="_blank" rel="noopener">Uber EATS</a>
   </nav>
 
   <footer class="site-footer">
-    <p>Le Comptoir des Etuves - generous snack restaurant in Montpellier city centre, near Place de la Comedie</p>
-    <a href="wraps.html">See the full menu</a>
+    <p>Le Comptoir des Étuves — generous food in Montpellier city centre, near Place de la Comédie</p>
+    <a href="#menu">Explore the menu</a>
   </footer>
 
   <script src="../script.js"></script>

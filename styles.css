@@ -1575,7 +1575,7 @@ p {
   }
 
   .hero-price-sticker {
-    top: 15%;
+    top: 23%;
   }
 
   .one-page-home .home-hero .hero-actions {
@@ -1590,7 +1590,11 @@ p {
   }
 
   .hero-product-stage {
-    width: min(86vw, 340px);
+    width: min(86vw, calc(55svh - 40px), 340px);
+  }
+
+  .hero-price-sticker {
+    top: 20%;
   }
 }
 

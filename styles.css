@@ -1036,7 +1036,7 @@ p {
   font-family: "Anton", Impact, sans-serif;
   font-size: clamp(2.15rem, 10.2vw, 2.58rem);
   font-weight: 400;
-  line-height: 0.86;
+  line-height: 1.04;
   letter-spacing: 0.015em;
   text-transform: uppercase;
   filter: drop-shadow(0 5px 0 rgba(137, 8, 22, 0.34));
@@ -1098,7 +1098,7 @@ p {
 .hero-product-stage {
   position: relative;
   z-index: 2;
-  width: min(96vw, 400px);
+  width: clamp(280px, 88vw, 400px);
   align-self: end;
   justify-self: center;
   margin-bottom: 0.25rem;
@@ -1465,7 +1465,7 @@ p {
   }
 
   .hero-product-stage {
-    width: clamp(440px, 42vw, 500px);
+    width: clamp(380px, 36vw, 520px);
     transform: translateY(-1.5rem);
   }
 
@@ -1517,7 +1517,7 @@ p {
 
   .hero-local-title {
     font-size: clamp(1.95rem, 10vw, 2rem);
-    line-height: 0.87;
+    line-height: 1.04;
   }
 
   .hero-title-restaurant {
@@ -1542,7 +1542,7 @@ p {
   }
 
   .hero-product-stage {
-    width: min(96vw, 326px);
+    width: clamp(270px, 88vw, 315px);
   }
 
   .hero-price-sticker {
@@ -1571,7 +1571,11 @@ p {
 
 @media (max-width: 340px) and (max-height: 600px) {
   .hero-product-stage {
-    width: 88vw;
+    width: min(86vw, 290px);
+  }
+
+  .hero-price-sticker {
+    top: 15%;
   }
 
   .one-page-home .home-hero .hero-actions {
@@ -1586,7 +1590,7 @@ p {
   }
 
   .hero-product-stage {
-    width: min(88vw, 340px);
+    width: min(86vw, 340px);
   }
 }
 
@@ -1645,7 +1649,7 @@ p {
     position: absolute;
     top: 1.15rem;
     left: 50%;
-    width: 260px;
+    width: clamp(190px, 29vw, 260px);
     margin: 0;
     transform: translateX(-50%);
   }

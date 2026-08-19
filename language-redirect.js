@@ -52,7 +52,9 @@
 
   const pageName = currentUrl.pathname.split("/").filter(Boolean).pop() || "";
   const localizedPage = !pageName || pageName === "index.html" ? "" : pageName;
-  const targetUrl = new URL(`/${preferredLanguage}/${localizedPage}`, currentUrl.origin);
+  const siteDirectoryUrl = new URL("./", currentUrl);
+  const localizedPath = localizedPage || (currentUrl.protocol === "file:" ? "index.html" : "");
+  const targetUrl = new URL(`${preferredLanguage}/${localizedPath}`, siteDirectoryUrl);
   currentUrl.searchParams.delete("lang");
   targetUrl.search = currentUrl.search;
   targetUrl.hash = currentUrl.hash;

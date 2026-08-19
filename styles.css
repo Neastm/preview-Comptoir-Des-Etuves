@@ -1045,6 +1045,7 @@ p {
 .hero-local-title span,
 .hero-local-title strong {
   display: block;
+  white-space: nowrap;
 }
 
 .hero-title-restaurant {
@@ -1091,16 +1092,17 @@ p {
   line-height: 1;
   letter-spacing: 0.075em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .hero-product-stage {
   position: relative;
   z-index: 2;
-  width: min(108vw, 460px);
+  width: min(96vw, 400px);
   align-self: end;
   justify-self: center;
   margin-bottom: 0.25rem;
-  transform: translateY(-1.5rem);
+  transform: translateY(-0.75rem);
 }
 
 .hero-burger {
@@ -1141,7 +1143,7 @@ p {
   z-index: 3;
   top: 0.25rem;
   right: -0.2rem;
-  width: 204px;
+  width: clamp(180px, 52vw, 204px);
   aspect-ratio: 1;
   display: grid;
   place-items: center;
@@ -1464,6 +1466,7 @@ p {
 
   .hero-product-stage {
     width: clamp(440px, 42vw, 500px);
+    transform: translateY(-1.5rem);
   }
 
   .hero-price-sticker {
@@ -1497,6 +1500,93 @@ p {
 
   .home .site-menu-links a {
     font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 699px) {
+  .one-page-home .home-hero {
+    min-height: max(640px, calc(100svh - var(--topbar-h)));
+  }
+}
+
+@media (max-width: 360px) {
+  .one-page-home .home-hero-copy {
+    width: min(52vw, 172px);
+    padding-left: 0.75rem;
+  }
+
+  .hero-local-title {
+    font-size: clamp(1.95rem, 10vw, 2rem);
+    line-height: 0.87;
+  }
+
+  .hero-title-restaurant {
+    font-size: 0.86em;
+  }
+
+  .hero-local-title strong {
+    font-size: 1.25em;
+  }
+
+  .hero-alias {
+    margin-top: 0.68rem;
+    padding: 0.23rem 0.4rem;
+    font-size: 0.52rem;
+    letter-spacing: 0.06em;
+  }
+
+  .circular-logo {
+    top: 0.35rem;
+    right: -0.15rem;
+    width: clamp(154px, 49vw, 164px);
+  }
+
+  .hero-product-stage {
+    width: min(96vw, 326px);
+  }
+
+  .hero-price-sticker {
+    right: 1.5rem;
+    width: 86px;
+  }
+
+  .one-page-home .home-hero .hero-actions {
+    gap: 0.4rem;
+    padding-inline: 0.5rem;
+  }
+
+  .one-page-home .home-hero .btn,
+  .one-page-home .home-hero .uber-eats-button {
+    padding-inline: 0.75rem;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 360px) and (max-height: 800px) {
+  .one-page-home .home-hero {
+    min-height: calc(100svh - var(--topbar-h));
+    padding-bottom: 3.2rem;
+  }
+}
+
+@media (max-width: 340px) and (max-height: 600px) {
+  .hero-product-stage {
+    width: 88vw;
+  }
+
+  .one-page-home .home-hero .hero-actions {
+    transform: translateY(-2px);
+  }
+}
+
+@media (min-width: 361px) and (max-width: 699px) and (max-height: 720px) {
+  .one-page-home .home-hero {
+    min-height: calc(100svh - var(--topbar-h));
+    padding-bottom: 3.2rem;
+  }
+
+  .hero-product-stage {
+    width: min(88vw, 340px);
   }
 }
 

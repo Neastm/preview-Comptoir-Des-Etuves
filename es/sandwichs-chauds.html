@@ -107,22 +107,73 @@
   }
   </script>
 </head>
-<body class="product-page">
-  <header class="topbar"><a class="brand" href="./" aria-label="Inicio Le Comptoir des Etuves"><img src="../images/logo.webp" alt="Logo de Le Comptoir des Etuves" /><span>Le Comptoir des Etuves</span></a><a class="uber-eats-button" href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw" target="_blank" rel="noopener"><span>Uber</span> <strong>EATS</strong></a><button class="menu-toggle" type="button" aria-controls="siteMenu" aria-expanded="false" aria-label="Abrir el menu"><span></span><span></span><span></span></button></header>
-  <nav class="site-menu" id="siteMenu" aria-label="Main navigation" hidden><div class="site-menu-panel"><button class="menu-close" type="button" aria-label="Cerrar el menu">&times;</button><p class="menu-eyebrow">La carta</p><a href="wraps.html">Wraps</a><a href="sandwichs-chauds.html">Bocadillos calientes</a><a href="tacos.html">Tacos</a><a href="burgers.html">Hamburguesas</a><a href="salades.html">Ensaladas</a><a href="americains.html">Americanos</a><a href="assiettes.html">Platos</a><a href="boissons.html">Bebidas</a><a href="desserts.html">Postres</a></div></nav>
+<body class="product-page home category-page">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Inicio de Le Comptoir des Étuves">
+      <img loading="lazy" decoding="async" src="../images/logo.webp" alt="Logo de Le Comptoir des Étuves" />
+      <span>Le Comptoir des Étuves</span>
+    </a>
+    <div class="topbar-actions">
+      <a class="topbar-link" href="index.html#menu">La carta</a>
+      <button class="menu-toggle" type="button" aria-controls="siteMenu" aria-expanded="false" aria-label="Abrir el menú">
+        <span class="menu-toggle-label">Menú</span>
+        <span class="menu-toggle-lines" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+  <nav class="site-menu" id="siteMenu" aria-label="Navegación principal" hidden>
+    <div class="site-menu-panel">
+      <div class="site-menu-header">
+        <a class="brand" href="index.html" aria-label="Inicio de Le Comptoir des Étuves">
+          <img loading="lazy" decoding="async" src="../images/logo.webp" alt="Logo de Le Comptoir des Étuves" />
+          <span>Le Comptoir des Étuves</span>
+        </a>
+        <button class="menu-close" type="button" aria-label="Cerrar el menú">&times;</button>
+      </div>
+      <p class="menu-eyebrow">La carta</p>
+      <div class="site-menu-links">
+        <a href="wraps.html">Wraps</a>
+        <a href="sandwichs-chauds.html">Bocadillos calientes</a>
+        <a href="tacos.html">Tacos</a>
+        <a href="burgers.html">Hamburguesas</a>
+        <a href="salades.html">Ensaladas</a>
+        <a href="americains.html">Americanos</a>
+        <a href="assiettes.html">Platos</a>
+        <a href="boissons.html">Bebidas</a>
+        <a href="desserts.html">Postres</a>
+      </div>
+      <div class="site-menu-footer">
+        <a href="index.html#infos">Información práctica</a>
+        <a class="btn btn-uber-eats" href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw?msockid=33f06aeddd2b65fa2c007c70dc0e6430" target="_blank" rel="noopener">Uber Eats</a>
+      </div>
+    </div>
+  </nav>
   <main class="page-main">
-    <section class="product-hero wave-section wave-red"><div><h1>Bocadillos calientes</h1></div></section>
+    <section class="product-hero wave-section wave-red"><div><h1>Bocadillos calientes</h1><p class="category-intro">Bocadillos calientes en baguette: descubre los ingredientes y los precios de cada menú.</p></div></section>
     <section class="product-grid">
-      <article class="product-card" data-menu-price="Menu patatas + bebida: 13,90 EUR / + postre: 15,90 EUR" data-detail="Media baguette de panaderia, steak estilo carniceria 120g, queso fresco, emmental fundido, verduras frescas, cebolla confitada."><img src="../images/visuels-arrivent-bientot.webp" alt="Tradicional" /><h2>Tradicional</h2><p>9,90 EUR</p></article>
-      <article class="product-card" data-menu-price="Menu patatas + bebida: 13,90 EUR / + postre: 15,90 EUR" data-detail="Media baguette de panaderia, tenders de pollo, cheddar, verduras frescas, cebolla confitada."><img src="../images/Sandwich%20Crosutillant.webp" alt="Crujiente" /><h2>Crujiente</h2><p>9,90 EUR</p></article>
-      <article class="product-card" data-menu-price="Menu patatas + bebida: 13,90 EUR / + postre: 15,90 EUR" data-detail="Media baguette de panaderia, medallon de verduras, cheddar, verduras frescas, cebolla confitada."><img src="../images/Sandwich%20Veggie.webp" alt="Vegetariano" /><h2>Vegetariano</h2><p>9,90 EUR</p></article>
-      <article class="product-card" data-menu-price="Menu patatas + bebida: 13,90 EUR / + postre: 15,90 EUR" data-detail="Media baguette de panaderia, steak estilo carniceria 120g, bacon de ternera, raclette fundida, verduras frescas, cebolla confitada."><img src="../images/visuels-arrivent-bientot.webp" alt="Montagnard" /><h2>Montagnard</h2><p>9,90 EUR</p></article>
-      <article class="product-card" data-menu-price="Menu patatas + bebida: 13,90 EUR / + postre: 15,90 EUR" data-detail="Media baguette de panaderia, steak estilo carniceria 120g, bacon de ternera, queso azul, verduras frescas, cebolla confitada."><img src="../images/visuels-arrivent-bientot.webp" alt="Signature au bleu" /><h2>Signature au bleu</h2><p>9,90 EUR</p></article>
-      <article class="product-card" data-menu-price="Menu patatas + bebida: 14,90 EUR / + postre: 16,90 EUR" data-detail="Media baguette de panaderia, steak estilo carniceria 120g, emmental fundido, bacon de ternera, huevo frito, verduras frescas, cebolla confitada."><img src="../images/visuels-arrivent-bientot.webp" alt="Le Chef" /><h2>Le Chef</h2><p>10,90 EUR</p></article>
+      <article class="product-card" data-menu-price="Menu patatas + bebida: 13,90 EUR / + postre: 15,90 EUR" data-detail="Media baguette de panaderia, steak estilo carniceria 120g, queso fresco, emmental fundido, verduras frescas, cebolla confitada."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Tradicional" /><h2>Tradicional</h2><p>9,90 EUR</p></article>
+      <article class="product-card" data-menu-price="Menu patatas + bebida: 13,90 EUR / + postre: 15,90 EUR" data-detail="Media baguette de panaderia, tenders de pollo, cheddar, verduras frescas, cebolla confitada."><img loading="lazy" decoding="async" src="../images/Sandwich%20Crosutillant.webp" alt="Crujiente" /><h2>Crujiente</h2><p>9,90 EUR</p></article>
+      <article class="product-card" data-menu-price="Menu patatas + bebida: 13,90 EUR / + postre: 15,90 EUR" data-detail="Media baguette de panaderia, medallon de verduras, cheddar, verduras frescas, cebolla confitada."><img loading="lazy" decoding="async" src="../images/Sandwich%20Veggie.webp" alt="Vegetariano" /><h2>Vegetariano</h2><p>9,90 EUR</p></article>
+      <article class="product-card" data-menu-price="Menu patatas + bebida: 13,90 EUR / + postre: 15,90 EUR" data-detail="Media baguette de panaderia, steak estilo carniceria 120g, bacon de ternera, raclette fundida, verduras frescas, cebolla confitada."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Montagnard" /><h2>Montagnard</h2><p>9,90 EUR</p></article>
+      <article class="product-card" data-menu-price="Menu patatas + bebida: 13,90 EUR / + postre: 15,90 EUR" data-detail="Media baguette de panaderia, steak estilo carniceria 120g, bacon de ternera, queso azul, verduras frescas, cebolla confitada."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Signature au bleu" /><h2>Signature au bleu</h2><p>9,90 EUR</p></article>
+      <article class="product-card" data-menu-price="Menu patatas + bebida: 14,90 EUR / + postre: 16,90 EUR" data-detail="Media baguette de panaderia, steak estilo carniceria 120g, emmental fundido, bacon de ternera, huevo frito, verduras frescas, cebolla confitada."><img loading="lazy" decoding="async" src="../images/visuels-arrivent-bientot.webp" alt="Le Chef" /><h2>Le Chef</h2><p>10,90 EUR</p></article>
     </section>
     <section class="cta-band"><a class="btn btn-primary" href="tel:+33783751334">Llamar</a><a class="btn btn-outline" href="./">Volver al inicio</a><a class="btn btn-outline" href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw" target="_blank" rel="noopener">Uber Eats</a></section>
   </main>
   <nav class="mobile-actions" aria-label="Acciones rapidas movil"><button class="menu-open-btn" type="button" aria-controls="siteMenu">Carta</button><a href="./">Volver al inicio</a><a href="tel:+33783751334">Llamar</a><a href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw" target="_blank" rel="noopener">Uber Eats</a></nav>
+  <footer class="site-footer"><p>Le Comptoir des Étuves — Montpellier</p><a href="index.html#menu">Ver nuestra carta</a>
+<nav class="footer-categories" aria-label="Nuestras especialidades"><a href="wraps.html">Wraps</a>
+<a href="sandwichs-chauds.html">Bocadillos calientes</a>
+<a href="tacos.html">Tacos</a>
+<a href="burgers.html">Hamburguesas</a>
+<a href="salades.html">Ensaladas</a>
+<a href="americains.html">Americanos</a>
+<a href="assiettes.html">Platos</a>
+<a href="boissons.html">Bebidas</a>
+<a href="desserts.html">Postres</a></nav>
+    <nav class="footer-languages" aria-label="Language / Langue / Idioma"><a href="../sandwichs-chauds.html?lang=fr" hreflang="fr" lang="fr">FR</a> · <a href="../en/sandwichs-chauds.html" hreflang="en" lang="en">EN</a> · <a href="sandwichs-chauds.html" hreflang="es" lang="es" aria-current="page">ES</a></nav>
+</footer>
+
   <script src="../script.js"></script>
 </body>
 </html>

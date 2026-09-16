@@ -293,39 +293,90 @@
   }
   </script>
 </head>
-<body class="product-page">
-  <header class="topbar"><a class="brand" href="index.html"><img src="images/logo.webp" alt="Logo Le Comptoir des Étuves" /><span>Le Comptoir des Étuves</span></a><a class="uber-eats-button" href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw?msockid=33f06aeddd2b65fa2c007c70dc0e6430" target="_blank" rel="noopener"><span>Uber</span> <strong>EATS</strong></a><button class="menu-toggle" type="button" aria-controls="siteMenu" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button></header>
-  <nav class="site-menu" id="siteMenu" aria-label="Navigation principale" hidden><div class="site-menu-panel"><button class="menu-close" type="button" aria-label="Fermer le menu">&times;</button><p class="menu-eyebrow">La carte</p><a href="wraps.html">Wraps</a><a href="sandwichs-chauds.html">Sandwichs chauds</a><a href="tacos.html">Tacos</a><a href="burgers.html">Burgers</a><a href="salades.html">Salades</a><a href="americains.html">Américains</a><a href="assiettes.html">Assiettes</a><a href="boissons.html">Boissons</a><a href="desserts.html">Desserts</a></div></nav>
+<body class="product-page home category-page">
+  <header class="topbar">
+    <a class="brand" href="index.html?lang=fr" aria-label="Accueil Le Comptoir des Étuves">
+      <img loading="lazy" decoding="async" src="images/logo.webp" alt="Logo Le Comptoir des Étuves" />
+      <span>Le Comptoir des Étuves</span>
+    </a>
+    <div class="topbar-actions">
+      <a class="topbar-link" href="index.html?lang=fr#menu">La carte</a>
+      <button class="menu-toggle" type="button" aria-controls="siteMenu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-toggle-lines" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+  <nav class="site-menu" id="siteMenu" aria-label="Navigation principale" hidden>
+    <div class="site-menu-panel">
+      <div class="site-menu-header">
+        <a class="brand" href="index.html?lang=fr" aria-label="Accueil Le Comptoir des Étuves">
+          <img loading="lazy" decoding="async" src="images/logo.webp" alt="Logo Le Comptoir des Étuves" />
+          <span>Le Comptoir des Étuves</span>
+        </a>
+        <button class="menu-close" type="button" aria-label="Fermer le menu">&times;</button>
+      </div>
+      <p class="menu-eyebrow">La carte</p>
+      <div class="site-menu-links">
+        <a href="wraps.html">Wraps</a>
+        <a href="sandwichs-chauds.html">Sandwichs chauds</a>
+        <a href="tacos.html">Tacos</a>
+        <a href="burgers.html">Burgers</a>
+        <a href="salades.html">Salades</a>
+        <a href="americains.html">Américains</a>
+        <a href="assiettes.html">Assiettes</a>
+        <a href="boissons.html">Boissons</a>
+        <a href="desserts.html">Desserts</a>
+      </div>
+      <div class="site-menu-footer">
+        <a href="index.html?lang=fr#infos">Infos pratiques</a>
+        <a class="btn btn-uber-eats" href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw?msockid=33f06aeddd2b65fa2c007c70dc0e6430" target="_blank" rel="noopener">Uber Eats</a>
+      </div>
+    </div>
+  </nav>
   <main class="page-main">
-    <section class="product-hero wave-section wave-red"><div><h1>Boissons</h1></div></section>
+    <section class="product-hero wave-section wave-red"><div><h1>Boissons</h1><p class="category-intro">Boissons chaudes, fraîches et alcoolisées : tous les formats et prix de notre carte.</p></div></section>
     <section class="product-grid">
-      <article class="product-card" data-detail="Boisson froide."><img src="images/visuels-arrivent-bientot.webp" alt="Eau" /><h2>Eau</h2><p>1,50 EUR</p></article>
-      <article class="product-card" data-detail="Soda en canette 33cl."><img src="images/visuels-arrivent-bientot.webp" alt="Soda canette 33cl" /><h2>Soda canette 33cl</h2><p>2,00 EUR</p></article>
-      <article class="product-card" data-detail="Soda en bouteille 50cl."><img src="images/visuels-arrivent-bientot.webp" alt="Soda bouteille 50cl" /><h2>Soda bouteille 50cl</h2><p>2,50 EUR</p></article>
-      <article class="product-card" data-detail="Boisson fraîche citronnée."><img src="images/visuels-arrivent-bientot.webp" alt="Citronnade" /><h2>Citronnade</h2><p>2,50 EUR</p></article>
-      <article class="product-card" data-detail="Thé pêche glacé."><img src="images/visuels-arrivent-bientot.webp" alt="Thé pêche glacé" /><h2>Thé pêche glacé</h2><p>2,50 EUR</p></article>
-      <article class="product-card" data-detail="Jus d'orange pressé minute."><img src="images/visuels-arrivent-bientot.webp" alt="Jus d'orange pressé" /><h2>Jus d'orange pressé</h2><p>4,00 EUR</p></article>
-      <article class="product-card" data-detail="Smoothie frais."><img src="images/visuels-arrivent-bientot.webp" alt="Smoothies" /><h2>Smoothies</h2><p>4,90 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Café" /><h2>Café</h2><p>1,20 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Café allongé" /><h2>Café allongé</h2><p>1,50 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Noisette" /><h2>Noisette</h2><p>1,50 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Café double" /><h2>Café double</h2><p>2,00 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Café latte" /><h2>Café latte</h2><p>2,00 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Chocolat chaud" /><h2>Chocolat chaud</h2><p>2,50 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Cappuccino" /><h2>Cappuccino</h2><p>3,00 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Café viennois" /><h2>Café viennois</h2><p>3,00 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Chocolat viennois" /><h2>Chocolat viennois</h2><p>3,00 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Thé" /><h2>Thé</h2><p>2,00 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Décaféiné" /><h2>Décaféiné</h2><p>1,20 EUR</p></article>
-      <article class="product-card" data-detail="Boisson chaude."><img src="images/visuels-arrivent-bientot.webp" alt="Décaféiné long" /><h2>Décaféiné long</h2><p>1,50 EUR</p></article>
-      <article class="product-card" data-detail="Boisson alcoolisée."><img src="images/visuels-arrivent-bientot.webp" alt="Heineken" /><h2>Heineken</h2><p>3,00 EUR</p></article>
-      <article class="product-card" data-detail="Boisson alcoolisée."><img src="images/visuels-arrivent-bientot.webp" alt="Desperados" /><h2>Desperados</h2><p>4,00 EUR</p></article>
-      <article class="product-card" data-detail="Boisson alcoolisée."><img src="images/visuels-arrivent-bientot.webp" alt="Verre de vin" /><h2>Verre de vin</h2><p>2,50 EUR</p></article>
-      <article class="product-card" data-detail="Boisson alcoolisée."><img src="images/visuels-arrivent-bientot.webp" alt="Pichet de vin" /><h2>Pichet de vin</h2><p>7,50 EUR</p></article>
+      <article class="product-card" data-detail="Boisson froide."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Eau" /><h2>Eau</h2><p>1,50 EUR</p></article>
+      <article class="product-card" data-detail="Soda en canette 33cl."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Soda canette 33cl" /><h2>Soda canette 33cl</h2><p>2,00 EUR</p></article>
+      <article class="product-card" data-detail="Soda en bouteille 50cl."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Soda bouteille 50cl" /><h2>Soda bouteille 50cl</h2><p>2,50 EUR</p></article>
+      <article class="product-card" data-detail="Boisson fraîche citronnée."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Citronnade" /><h2>Citronnade</h2><p>2,50 EUR</p></article>
+      <article class="product-card" data-detail="Thé pêche glacé."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Thé pêche glacé" /><h2>Thé pêche glacé</h2><p>2,50 EUR</p></article>
+      <article class="product-card" data-detail="Jus d'orange pressé minute."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Jus d'orange pressé" /><h2>Jus d'orange pressé</h2><p>4,00 EUR</p></article>
+      <article class="product-card" data-detail="Smoothie frais."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Smoothies" /><h2>Smoothies</h2><p>4,90 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Café" /><h2>Café</h2><p>1,20 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Café allongé" /><h2>Café allongé</h2><p>1,50 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Noisette" /><h2>Noisette</h2><p>1,50 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Café double" /><h2>Café double</h2><p>2,00 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Café latte" /><h2>Café latte</h2><p>2,00 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Chocolat chaud" /><h2>Chocolat chaud</h2><p>2,50 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Cappuccino" /><h2>Cappuccino</h2><p>3,00 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Café viennois" /><h2>Café viennois</h2><p>3,00 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Chocolat viennois" /><h2>Chocolat viennois</h2><p>3,00 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Thé" /><h2>Thé</h2><p>2,00 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Décaféiné" /><h2>Décaféiné</h2><p>1,20 EUR</p></article>
+      <article class="product-card" data-detail="Boisson chaude."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Décaféiné long" /><h2>Décaféiné long</h2><p>1,50 EUR</p></article>
+      <article class="product-card" data-detail="Boisson alcoolisée."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Heineken" /><h2>Heineken</h2><p>3,00 EUR</p></article>
+      <article class="product-card" data-detail="Boisson alcoolisée."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Desperados" /><h2>Desperados</h2><p>4,00 EUR</p></article>
+      <article class="product-card" data-detail="Boisson alcoolisée."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Verre de vin" /><h2>Verre de vin</h2><p>2,50 EUR</p></article>
+      <article class="product-card" data-detail="Boisson alcoolisée."><img loading="lazy" decoding="async" src="images/visuels-arrivent-bientot.webp" alt="Pichet de vin" /><h2>Pichet de vin</h2><p>7,50 EUR</p></article>
     </section>
     <section class="cta-band"><a class="btn btn-primary" href="tel:+33783751334">Appeler</a><a class="btn btn-outline" href="index.html">Retour accueil</a><a class="btn btn-outline" href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw?msockid=33f06aeddd2b65fa2c007c70dc0e6430" target="_blank" rel="noopener">Uber Eats</a></section>
   </main>
   <nav class="mobile-actions" aria-label="Actions rapides mobile"><button class="menu-open-btn" type="button" aria-controls="siteMenu">Menu</button><a href="index.html">Accueil</a><a href="desserts.html">Desserts</a><a href="tel:+33783751334">Appeler</a><a href="https://www.ubereats.com/fr/store/comptoir-des-etuves/ZKupSNvwXZqzl_tochM5Iw?msockid=33f06aeddd2b65fa2c007c70dc0e6430" target="_blank" rel="noopener">Uber Eats</a></nav>
+  <footer class="site-footer"><p>Le Comptoir des Étuves — Montpellier</p><a href="index.html?lang=fr#menu">Voir notre carte</a>
+<nav class="footer-categories" aria-label="Nos spécialités"><a href="wraps.html">Wraps</a>
+<a href="sandwichs-chauds.html">Sandwichs chauds</a>
+<a href="tacos.html">Tacos</a>
+<a href="burgers.html">Burgers</a>
+<a href="salades.html">Salades</a>
+<a href="americains.html">Américains</a>
+<a href="assiettes.html">Assiettes</a>
+<a href="boissons.html">Boissons</a>
+<a href="desserts.html">Desserts</a></nav>
+    <nav class="footer-languages" aria-label="Language / Langue / Idioma"><a href="boissons.html?lang=fr" hreflang="fr" lang="fr" aria-current="page">FR</a> · <a href="en/boissons.html" hreflang="en" lang="en">EN</a> · <a href="es/boissons.html" hreflang="es" lang="es">ES</a></nav>
+</footer>
+
   <script src="script.js"></script>
 </body>
-</html> 
+</html>

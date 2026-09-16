@@ -1598,6 +1598,22 @@ p {
   }
 }
 
+/* Shared category pages and crawlable footer navigation. */
+.footer-categories, .footer-languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem 1.1rem;
+  margin: 1.25rem auto 0;
+  max-width: 960px;
+}
+.footer-categories a { font-size: 0.85rem; }
+.footer-languages a { min-width: 44px; padding: 0.5rem; }
+.footer-languages a[aria-current="page"] { text-decoration: underline; }
+.category-intro { max-width: 60ch; margin: 1rem 0 0; line-height: 1.55; font-family: "Montserrat", sans-serif; font-size: 1rem; }
+.category-page .product-hero { padding-bottom: 2.5rem; }
+.category-page .site-menu-links a { min-width: 0; overflow-wrap: anywhere; }
+
 @media (orientation: landscape) and (max-height: 620px) and (max-width: 900px) {
   .one-page-home .home-hero {
     min-height: calc(100svh - var(--topbar-h));

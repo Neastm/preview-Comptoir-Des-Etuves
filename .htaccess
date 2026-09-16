@@ -1,4 +1,5 @@
 RewriteEngine On
+ErrorDocument 404 /404.html
 
 # Use one canonical home URL.
 RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
